@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -14,18 +15,18 @@
             <a class="navbar-brand" href="#">Moracle.io</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Delegate</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#">Whitepaper</a>
                     </li>
                 </ul>
             </div>
@@ -36,11 +37,85 @@
             <h1>Smarter blockchain applications need smarter oracles.</h1>
             <p class="lead">Introducing Moracle, the decentralized and programmable oracle.</p>
             <hr class="my-4">
-            <button class="btn btn-primary btn-lg" role="button"><i class="fa fa-arrow-down" aria-hidden="true"></i> Learn more</button>
-            <a href="#" class="btn btn-light btn-lg" role="button"><i class="fa fa-file-text-o" aria-hidden="true"></i> Read the whitepaper</a>
+            <button class="btn btn-primary btn-lg jumbotron-button" role="button">
+                <i class="fa fa-arrow-down" aria-hidden="true"></i> Learn more</button>
+            <a href="#" class="btn btn-light btn-lg jumbotron-button" role="button">
+                <i class="fa fa-file-text-o" aria-hidden="true"></i> Read the whitepaper</a>
+            <a href="#" class="btn btn-success btn-lg jumbotron-button" role="button">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i> Get updates</a>
         </div>
 
-        <h2>The problem with current oracles</h2>
+        <h2>What is an oracle?</h2>
+        <p>The code of a blockchain application must be 100% deterministic. This is necessary in order for other nodes to verify
+            the outcome of the code.</p>
+        <p>
+            This means that there are some limitations on the functions that blockchain applications can perform. Blockchain code cannot:
+        </p>
+        <ul>
+            <li>Generate random numbers</li>
+            <li>Access information from the web or use web APIs</li>
+            <li>Communicate with other blockchains</li>
+        </ul>
+        <p>In order to perform these functions, an outside entity (known as an oracle) must request/generate the data needed,
+            and embed it in the blockchain for the decentralized application to access. However, existing oracle implementations
+            are centralized or expensive.
+        </p>
+        <p style="font-size: 19px">Moracle aims to solve these problems by offering an
+            <b>inexpensive</b>,
+            <b>decentralized</b>, and
+            <b>fast</b> oracle service.
+            <br> Built on the
+            <a href="https://lisk.io/">Lisk Blockchain Application Platform</a>, Moracle will allow for connected and dynamic decentralized apps.</p>
+        <h2>Features</h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Decentralized data serving</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Dynamic and programmable queries</h4>
+                        <p class="card-text">Query the Moracle network with simple JSON objects</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">MRCL Token</h4>
+                        <p class="card-text">All transactions in the Moracle ecosystem will be paid for by the MRCL token. Node operators will be able to earn money
+                            by providing a reliable data provider, and blockchain app users will pay the node operators using MRCL tokens.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h2>Stay updated</h2>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Twitter</h4>
+                <a class="twitter-timeline" href="https://twitter.com/MoracleNetwork?ref_src=twsrc%5Etfw">Tweets by MoracleNetwork</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="col-md-8">
+                <h4>Email</h4>
+                SUBSCRIBE FORM WILL GO HERE
+            </div>
+        </div>
+
+    </div>
+
+    <div style="padding-top: 10px; padding-bottom:10px; background-color: #2e6cd1; margin-top: 25px;">
+        <div class="container">
+            <span style="color: rgb(231, 231, 231); font-size: 10px;">&copy; Moracle Network 2017</span>
+        </div>
     </div>
 
 

@@ -1,0 +1,10 @@
+.jumbotron-button {
+    margin-right: 5px;
+}
+
+
+@media (max-width: 767px) {
+    .jumbotron-button {
+        margin-bottom: 5px;
+    }
+}
