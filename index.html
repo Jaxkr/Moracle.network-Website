@@ -26,7 +26,7 @@
                         <a class="nav-link" href="#">Delegate</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Whitepaper</a>
+                        <a class="nav-link" href="whitepaper.pdf">Whitepaper</a>
                     </li>
                 </ul>
             </div>
@@ -39,14 +39,14 @@
             <h1>Smarter blockchain applications need smarter oracles.</h1>
             <p class="lead">Introducing Moracle, the decentralized and programmable oracle.</p>
             <hr class="my-4">
-            <button class="btn btn-primary btn-lg jumbotron-button" role="button">
-                <i class="fa fa-arrow-down" aria-hidden="true"></i> Learn more</button>
-            <a href="#" class="btn btn-light btn-lg jumbotron-button" role="button">
+            <a href="#learn" class="btn btn-primary btn-lg jumbotron-button" role="button">
+                <i class="fa fa-arrow-down" aria-hidden="true"></i> Learn more</a>
+            <a href="whitepaper.pdf" class="btn btn-light btn-lg jumbotron-button" role="button">
                 <i class="fa fa-file-text-o" aria-hidden="true"></i> Read the whitepaper</a>
-            <a href="#" class="btn btn-success btn-lg jumbotron-button" role="button">
+            <a href="#updates" class="btn btn-success btn-lg jumbotron-button" role="button">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i> Get updates</a>
         </div>
-
+        <a name="learn"></a>
         <h2>What is an oracle?</h2>
         <p>The code of a blockchain application must be 100% deterministic. This is necessary in order for other nodes to verify
             the outcome of the code.</p>
@@ -69,44 +69,73 @@
             <br> Built on the
             <a href="https://lisk.io/">Lisk Blockchain Application Platform</a>, Moracle will allow for connected and dynamic decentralized apps.</p>
         <h2 class="headingh2">Features</h2>
-        <div class="card-deck">
-            <div class="card">
-                <img class="card-img-top" src="http://via.placeholder.com/350x150">
-                <div class="card-body">
-                    <h4 class="card-title">Decentralized data service</h4>
-                    <p class="card-text">Anyone will be able to operate a Moracle node, and multiple nodes must agree on a query result before
-                        it is accepted by the network. Additional advantages of decentralization include high availablity
-                        and trustless verification.
-                    </p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/distributed.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Decentralized data service</h4>
+                        <p class="card-text">Anyone will be able to operate a Moracle node, and multiple nodes must agree on a query result before
+                            it is accepted by the network. The network will be fully distributed and decentralized, which
+                            allows for high availablity and trustless verification.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img class="card-img-top" src="http://via.placeholder.com/350x150">
-                <div class="card-body">
-                    <h4 class="card-title">Dynamic and programmable queries</h4>
-                    <p class="card-text">Query the Moracle network in real time with simple JSON objects. No need to set up a data source ahead
-                        of time!</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="http://via.placeholder.com/350x150">
-                <div class="card-body">
-                    <h4 class="card-title">MRCL Token</h4>
-                    <p class="card-text">All transactions in the Moracle ecosystem will be paid for by the MRCL token. Node operators will be
-                        able to earn money by providing a reliable data provider, and blockchain app users will pay the node
-                        operators using MRCL tokens.
-                    </p>
-                    <p>
-                        <a href="#" class="btn btn-light btn-lg" role="button">Token details</a>
-                    </p>
+            <div class="col-md-8">
+                <div class="card">
+                    <img class="card-img-top" src="images/queries.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Dynamic and programmable queries</h4>
+                        <p class="card-text">Query the Moracle network in real time with simple JSON objects. No need to set up a data source
+                            ahead of time! The network will be entirely accessible through the JavaScript API, and wrappers
+                            will be available in numerous other programming languages!</p>
+                    </div>
                 </div>
             </div>
         </div>
         <br>
-        <p class="lead">Want to learn more?
-            <a href="#">Read the whitepaper</a> for more details.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img class="card-img-top" src="http://via.placeholder.com/350x100">
+                    <div class="card-body">
+                        <h4 class="card-title">MRCL Token</h4>
+                        <p class="card-text">All transactions in the Moracle ecosystem will be paid for by the MRCL token. Node operators will
+                            be able to earn money by providing a reliable data provider, and blockchain app users will pay
+                            the node operators using MRCL tokens.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-light btn-lg" role="button">Token details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img class="card-img-top" src="images/lisk.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Built for Lisk</h4>
+                        <p>
+                            Moracle will be built with the upcoming Lisk SDK, and will allow Lisk dapps to access web API information such as exchange
+                            rates, generate random numbers, interact with fiat systems, and query other blockchains.
+                        </p>
+                        <p class="lead">Want to learn more?
+                            <a href="#">Read the whitepaper</a> for more details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
         <h2 class="headingh2">Get involved</h2>
+        <p>
+            Information about voting for the delegate in exchange for MRCL tokens and Lisk will go here
+        </p>
         <h2 class="headingh2">Developers</h2>
+        <p>
+            Information about team will go here.
+        </p>
+        <a name="updates"></a>
         <h2 class="headingh2">Stay updated</h2>
         <div class="row">
             <div class="col-md-4">
