@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 </head>
 
 <body>
@@ -22,10 +23,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Delegate</a>
+                        <a class="nav-link" href="#delegate">Delegate</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="whitepaper.pdf">Whitepaper</a>
@@ -67,7 +68,7 @@
             <b>inexpensive</b>,
             <b>decentralized</b>, and
             <b>fast</b> oracle service.
-            <br> Built on the
+            <br>Built on the
             <a href="https://lisk.io/">Lisk Blockchain Application Platform</a>, Moracle will allow for connected and dynamic decentralized apps.</p>
         <h2 class="headingh2">Features</h2>
         <div class="row">
@@ -107,8 +108,17 @@
                             the node operators using MRCL tokens.
                         </p>
                         <p>
-                            <a href="#" class="btn btn-light btn-lg" role="button">Token details</a>
+                            <button id="tokendetailsshow" class="btn btn-light btn-lg" role="button">Token details</button>
                         </p>
+                        <div id="tokendetails" style="display: none">
+                            <ol style="font-size: 12px">
+                                <li>Total supply for voters: 15,000,000</li>
+                                <li>Undistributed supply will be given at sidechain launch to voters based on their vote weight.</li>
+                                <li>Forging rewards: 1 MRCL per 10s block</li>
+                                <li>50% of fees are burned and not awarded to nodes to discourage network spam</li>
+                                <li>Support is planned for Lisk's decentralized exchange.</li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -128,25 +138,81 @@
             </div>
         </div>
         <br>
-        <h2 class="headingh2">Get involved</h2>
+        <a name="delegate"></a>
+        <h2 class="headingh2">Get involved, support delegate
+            <b style="background-color:#f5e49c">moracle.network</b>!</h2>
         <p>
-            The Moracle delegate is now live.
+            The Moracle delegate is sharing
+            <b>70%</b> and matching all Lisk earned with MRCL tokens 3:1!
+            <br>For example, if you earned 70 LSK by voting for us, you would also recieve
+            <b>210 MRCL</b> tokens when the sidechain goes live.
         </p>
-        <h2 class="headingh2">Developers</h2>
         <p>
-            Information about team will go here.
+            Currently, no token sale is planned, so the best way to support us and earn future Moracle tokens is to vote for our delegate!
+            All forged Lisk will be put towards development of the Moracle project. Vote
+            <a href="https://explorer.lisk.io/delegate/10452523477650082992L">moracle.network</a>!
         </p>
+        <h2 class="headingh2">Development</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Moracle will be completely open source and licensed under the MIT license. Lisk was chosen due to its use of JavaScript over
+                    a custom language such as Solidity. JavaScript is advantageous because it allows developers to begin
+                    using the platform with a minimal learning curve due to the language being popular and well documented.
+                    A full roadmap for Moracle will be released shortly after the Lisk SDK becomes available.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Jackson Roberts</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Whitepaper author and lead developer</h6>
+                        <p class="card-text">
+                            Hi! I'm a professional software developer; I've been involved in crypto since 2012 and am very excited about Lisk. I am currently the Boulder Community Ambassador
+                            and am the host of the <a href="https://www.meetup.com/Lisk-Boulder-Blockchain-Meetup/">Lisk Boulder Blockchain Meetups</a>.
+                        </p>
+                        <a href="https://lisk.chat/" class="card-link">lisk.chat</a>: @jackson<br>
+                    </div>
+                </div>
+            </div>
+        </div>
         <a name="updates"></a>
         <h2 class="headingh2">Stay updated</h2>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <h4>Twitter</h4>
                 <a class="twitter-timeline" href="https://twitter.com/MoracleNetwork?ref_src=twsrc%5Etfw">Tweets by MoracleNetwork</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <h4>Email</h4>
-                SUBSCRIBE FORM WILL GO HERE
+                <!-- Begin MailChimp Signup Form -->
+                <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+                    #mc_embed_signup {
+                        background: #fff;
+                        clear: left;
+                        font: 14px Helvetica, Arial, sans-serif;
+                    }
+                </style>
+                <div id="mc_embed_signup">
+                    <form action="https://network.us17.list-manage.com/subscribe/post?u=ddfe8eeca36ed8320f88309cd&amp;id=1e1076e31b" method="post"
+                        id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <label for="mce-EMAIL">Subscribe to our mailing list</label>
+                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b_ddfe8eeca36ed8320f88309cd_1e1076e31b" tabindex="-1" value="">
+                            </div>
+                            <div class="clear">
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!--End mc_embed_signup-->
             </div>
         </div>
 
@@ -168,7 +234,7 @@
         crossorigin="anonymous"></script>
     <script src="https://github.com/thenextweb/constellation/releases/download/v1.5.5/constellation.min.js"></script>
     <script>
-
+        
 			var constellationInstance = window.constellation({
 				size:[window.innerWidth,500],
 				canvas: document.querySelector('canvas'),
@@ -184,7 +250,13 @@
 					starSize: 2
 				}
 			});
-		
+            
+
+
+        $("#tokendetailsshow").click(function () {
+            $('#tokendetails').show();
+        });
+
     </script>
 </body>
 
