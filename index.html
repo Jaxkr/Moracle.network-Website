@@ -138,6 +138,28 @@
             </div>
         </div>
         <br>
+        <h2 class="headingh2">FAQs</h2>
+        <p>
+            <h5>
+                <u>What is the MRCL token used for?</u>
+            </h5>
+            <ul>
+                <li>By users: The token is spent every time a new data storage request is sent to the Moracle network.</li>
+                <li>By node operators: Anyone can provide bandwidth and storage space to help provide oracle services. Node operators
+                    are compensated in MRCL tokens based on their uptime.</li>
+                <li>By sidechain delegates: Delegates in the Moracle sidechain forge blocks with the transactions sent from users
+                    to node operators. Delegates forge new MRCL tokens with each block.</li>
+
+            </ul>
+            <h5>
+                <u>What is the difference between a data chain delegate and a transaction chain delegate?</u>
+            </h5>
+            <p>
+                Data chain delegates makes blocks on a given data chain. They are ranked only by uptime.<br>
+                Transaction chain delegates forge blocks on the transaction sidechain. They are ranked by vote weight.
+            </p>
+            <p>If you have any questions about the project, please don't hesitate to <a href="mailto:jacksonroberts@protonmail.com">email me</a> or contact me on lisk.chat.</p>
+        </p>
         <a name="delegate"></a>
         <h2 class="headingh2">Get involved, support delegate
             <b style="background-color:#f5e49c">moracle.network</b>!</h2>
@@ -168,10 +190,12 @@
                         <h4 class="card-title">Jackson Roberts</h4>
                         <h6 class="card-subtitle mb-2 text-muted">Whitepaper author and lead developer</h6>
                         <p class="card-text">
-                            Hi! I'm a professional software developer; I've been involved in crypto since 2012 and am very excited about Lisk. I am currently the Boulder Community Ambassador
-                            and am the host of the <a href="https://www.meetup.com/Lisk-Boulder-Blockchain-Meetup/">Lisk Boulder Blockchain Meetups</a>.
+                            Hi! I'm a professional software developer; I've been involved in crypto since 2012 and am very excited about Lisk. I am currently
+                            the Boulder Community Ambassador and am the host of the
+                            <a href="https://www.meetup.com/Lisk-Boulder-Blockchain-Meetup/">Lisk Boulder Blockchain Meetups</a>.
                         </p>
-                        <a href="https://lisk.chat/" class="card-link">lisk.chat</a>: @jackson<br>
+                        <a href="https://lisk.chat/" class="card-link">lisk.chat</a>: @jackson
+                        <br>
                     </div>
                 </div>
             </div>
@@ -234,23 +258,23 @@
         crossorigin="anonymous"></script>
     <script src="scripts/constellation.min.js"></script>
     <script>
-        
-			var constellationInstance = window.constellation({
-				size:[window.innerWidth,500],
-				canvas: document.querySelector('canvas'),
-				padding: [-100,15],
-				starCount: 100,
-				lineCount: 400,
-				fuzziness: 100,
-				style: {
-					starColor: '#000',
-					lineColor: '#858585',
-					lineSize: .3,
-					starPadding: 0,
-					starSize: 2
-				}
-			});
-            
+
+        var constellationInstance = window.constellation({
+            size: [window.innerWidth, 500],
+            canvas: document.querySelector('canvas'),
+            padding: [-100, 15],
+            starCount: 100,
+            lineCount: 400,
+            fuzziness: 100,
+            style: {
+                starColor: '#000',
+                lineColor: '#858585',
+                lineSize: .3,
+                starPadding: 0,
+                starSize: 2
+            }
+        });
+
 
 
         $("#tokendetailsshow").click(function () {
