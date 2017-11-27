@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <canvas style="pointer-events: none; z-index: -2; position:absolute;"></canvas>
+    <canvas style="pointer-events: none; z-index: -2; position:absolute; width: 100%;"></canvas>
     <div class="container">
         <nav class="navbar navbar-light navbar-expand-lg bg-light" style="background-color: #e3f2fd;">
             <a class="navbar-brand" href="#">Moracle.network</a>
@@ -281,7 +281,7 @@
     <script>
 
         var constellationInstance = window.constellation({
-            size: [window.innerWidth, 500],
+            size: [2000, 500],
             canvas: document.querySelector('canvas'),
             padding: [-100, 15],
             starCount: 100,
