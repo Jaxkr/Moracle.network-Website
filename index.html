@@ -2,6 +2,16 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110189297-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110189297-1');
+    </script>
+
     <title>Moracle - The oracle that does more</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
         crossorigin="anonymous">
@@ -12,7 +22,7 @@
 </head>
 
 <body>
-    <canvas style="pointer-events: none; z-index: -2; position:absolute;"></canvas>
+    <canvas id="constellationbg" style="pointer-events: none; z-index: -2; position:absolute; width: 100%;"></canvas>
     <div class="container">
         <nav class="navbar navbar-light navbar-expand-lg bg-light" style="background-color: #e3f2fd;">
             <a class="navbar-brand" href="#">Moracle.network</a>
@@ -46,7 +56,8 @@
             <a href="whitepaper.pdf" class="btn btn-light btn-lg jumbotron-button" role="button">
                 <i class="fa fa-file-text-o" aria-hidden="true"></i> Read the whitepaper</a>
             <a href="#updates" class="btn btn-success btn-lg jumbotron-button" role="button">
-                <i class="fa fa-envelope-o" aria-hidden="true"></i> Get updates</a>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i> Get updates</a><br><br>
+            <p class="lead" style="margin-bottom: 0px;">Prototype coming late December.</p>
         </div>
         <a name="learn"></a>
         <h2>What is an oracle?</h2>
@@ -108,7 +119,8 @@
                             the node operators using MRCL tokens.
                         </p>
                         <p>
-                            <button id="tokendetailsshow" class="btn btn-light btn-lg" role="button">Token details</button>
+                            <button id="tokendetailsshow" class="btn btn-primary btn-lg" role="button">
+                                <i class="fa fa-info" aria-hidden="true"></i> Token details</button>
                         </p>
                         <div id="tokendetails" style="display: none">
                             <ol style="font-size: 12px">
@@ -138,14 +150,57 @@
             </div>
         </div>
         <br>
+        <h2 class="headingh2">FAQs</h2>
+        <p>
+            <h5>
+                <u>What are the use cases of Moracle?</u>
+            </h5>
+            <p>
+                Moracle will let Lisk apps get information from the open web. Applications could:
+                <ul>
+                    <li>Base calculations off of real-time crytocurrency exchange rates.</li>
+                    <li>Interact with banking APIs.</li>
+                    <li>Store data for proof-of-existence purposes, allowing for notary dApps.</li>
+                    <li>Access data from Ethereum and other external blockchains.</li>
+                    <li>And much more!</li>
+                </ul>
+            </p>
+            <h5>
+                <u>What is the MRCL token used for?</u>
+            </h5>
+            <ul>
+                <li>By users: The token is spent every time a new data storage request is sent to the Moracle network.</li>
+                <li>By node operators: Anyone can provide bandwidth and storage space to help provide oracle services. Node operators
+                    are compensated in MRCL tokens based on their uptime.</li>
+                <li>By sidechain delegates: Delegates in the Moracle sidechain forge blocks with the transactions sent from users
+                    to node operators. Delegates forge new MRCL tokens with each block.</li>
+
+            </ul>
+            <h5>
+                <u>What is the difference between a data chain delegate and a transaction chain delegate?</u>
+            </h5>
+            <p>
+                Data chain delegates makes blocks on a given data chain. They are ranked only by uptime.
+                <br> Transaction chain delegates forge blocks on the transaction sidechain. They are ranked by vote weight.
+            </p>
+            <h5>
+                <u>Can anyone earn tokens by running a node?</u>
+            </h5>
+            <p>
+                Yes! Data chain nodes do not need to acquire votes to forge blocks, as they are ranked solely on uptime. Anyone who has a
+                high-uptime server with good bandwidth can contribute to the Moracle network!
+            </p>
+            <p>This FAQ section will be expanded. If you have any questions about the project, please don't hesitate to
+                <a href="mailto:jacksonroberts@protonmail.com">email me</a> or contact me on lisk.chat.</p>
+        </p>
         <a name="delegate"></a>
         <h2 class="headingh2">Get involved, support delegate
             <b style="background-color:#f5e49c">moracle.network</b>!</h2>
         <p>
             The Moracle delegate is sharing
             <b>70%</b> and matching all Lisk earned with MRCL tokens 3:1!
-            <br>For example, if you earned 70 LSK by voting for us, you would also recieve
-            <b>210 MRCL</b> tokens when the sidechain goes live.
+            <br>For example, if you earned 70 LSK by voting for us, you would also receive
+            <b>210 MRCL</b> tokens when the sidechain goes live in 2018.
         </p>
         <p>
             Currently, no token sale is planned, so the best way to support us and earn future Moracle tokens is to vote for our delegate!
@@ -168,10 +223,12 @@
                         <h4 class="card-title">Jackson Roberts</h4>
                         <h6 class="card-subtitle mb-2 text-muted">Whitepaper author and lead developer</h6>
                         <p class="card-text">
-                            Hi! I'm a professional software developer; I've been involved in crypto since 2012 and am very excited about Lisk. I am currently the Boulder Community Ambassador
-                            and am the host of the <a href="https://www.meetup.com/Lisk-Boulder-Blockchain-Meetup/">Lisk Boulder Blockchain Meetups</a>.
+                            Hi! I'm a professional software developer; I've been involved in crypto since 2012 and am very excited about Lisk. I am currently
+                            the Boulder Community Ambassador and am the host of the
+                            <a href="https://www.meetup.com/Lisk-Boulder-Blockchain-Meetup/">Lisk Boulder Blockchain Meetups</a>.
                         </p>
-                        <a href="https://lisk.chat/" class="card-link">lisk.chat</a>: @jackson<br>
+                        <a href="https://lisk.chat/" class="card-link">lisk.chat</a>: @jackson
+                        <br>
                     </div>
                 </div>
             </div>
@@ -232,25 +289,25 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
-    <script src="https://github.com/thenextweb/constellation/releases/download/v1.5.5/constellation.min.js"></script>
+    <script src="scripts/constellation.min.js"></script>
     <script>
-        
-			var constellationInstance = window.constellation({
-				size:[window.innerWidth,500],
-				canvas: document.querySelector('canvas'),
-				padding: [-100,15],
-				starCount: 100,
-				lineCount: 400,
-				fuzziness: 100,
-				style: {
-					starColor: '#000',
-					lineColor: '#858585',
-					lineSize: .3,
-					starPadding: 0,
-					starSize: 2
-				}
-			});
-            
+
+        var constellationInstance = window.constellation({
+            size: [2000, 500],
+            canvas: document.querySelector('canvas'),
+            padding: [-100, 2],
+            starCount: 100,
+            lineCount: 400,
+            fuzziness: 100,
+            style: {
+                starColor: '#000',
+                lineColor: '#858585',
+                lineSize: .3,
+                starPadding: 0,
+                starSize: 2
+            }
+        });
+
 
 
         $("#tokendetailsshow").click(function () {

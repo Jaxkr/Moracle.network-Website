@@ -12,3 +12,11 @@
 .headingh2 {
     margin-bottom: 20px;
 }
+
+body {
+    position:relative;
+    overflow-x: hidden;
+}
+html {
+    overflow-x: hidden;
+}
