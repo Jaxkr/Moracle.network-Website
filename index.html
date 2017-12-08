@@ -6,7 +6,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110189297-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-110189297-1');
@@ -56,7 +59,9 @@
             <a href="whitepaper.pdf" class="btn btn-light btn-lg jumbotron-button" role="button">
                 <i class="fa fa-file-text-o" aria-hidden="true"></i> Read the whitepaper</a>
             <a href="#updates" class="btn btn-success btn-lg jumbotron-button" role="button">
-                <i class="fa fa-envelope-o" aria-hidden="true"></i> Get updates</a><br><br>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i> Get updates</a>
+            <br>
+            <br>
             <p class="lead" style="margin-bottom: 0px;">Prototype coming late December.</p>
         </div>
         <a name="learn"></a>
@@ -193,6 +198,41 @@
             <p>This FAQ section will be expanded. If you have any questions about the project, please don't hesitate to
                 <a href="mailto:jacksonroberts@protonmail.com">email me</a> or contact me on lisk.chat.</p>
         </p>
+        <h2 class="headingh2">Roadmap</h2>
+        <ul class="roadmap">
+            <li class="roadmap">
+                <span class='line'></span>
+                <span class='number'></span>
+                <span class="blob">Late December 2017 - Launch of prototype testnet on Tendermint<br>
+                    <p style="font-size: 16px">A prototype of the Moracle service is currently being developed using lotion.js and Tendermint. Anyone will be able to run a validator node and participate in the test.
+                        Details will come later this month.</p></span>
+            </li>
+            <li class="roadmap">
+                <span class='line'></span>
+                <span class='number'></span>
+                <span class='blob'>Feburary 2018 - Release of alpha testnet on Lisk SDK<br>
+                    <p style="font-size: 15px">The Moracle service will be developed using the newly released Lisk SDK tools.</p></span>
+            </li>
+            <li class="roadmap">
+                <span class='line'></span>
+                <span class='number'></span>
+                <span class='blob'>Q2 2018 - Release of full beta testnet on Lisk SDK<br>
+                    <p style="font-size: 15px">Continued development utilizing new features of the Lisk SDK.</p></span>
+            </li>
+            <li class="roadmap">
+                <span class='line'></span>
+                <span class='number'></span>
+                <span class='blob'>Q3 2018 - Listing of MRCL token on Lisk decentralized exchange<br>
+                    <p style="font-size: 15px">When the Lisk decentralized exchange becomes available, the MRCL token will be one of the first tokens available on the platform to allow for 
+                        easy trading and low oracle fees. </p></span>
+            </li>
+            <li class="roadmap" style="min-height: 60px">
+                <span class='number'></span>
+                <span class='blob'>Q3 2018 - Version 1.0 release<br>
+                    <p style="font-size: 15px">A feature-complete version of Moracle will become available as a Lisk decentralized app.</p></span>
+            </li>
+        </ul>
+        <p>Note: these dates are subject to change based on the development rate of the Lisk SDK.</p>
         <a name="delegate"></a>
         <h2 class="headingh2">Get involved, support delegate
             <b style="background-color:#f5e49c">moracle.network</b>!</h2>
@@ -291,7 +331,6 @@
         crossorigin="anonymous"></script>
     <script src="scripts/constellation.min.js"></script>
     <script>
-
         var constellationInstance = window.constellation({
             size: [2000, 500],
             canvas: document.querySelector('canvas'),
@@ -313,7 +352,6 @@
         $("#tokendetailsshow").click(function () {
             $('#tokendetails').show();
         });
-
     </script>
 </body>
 
