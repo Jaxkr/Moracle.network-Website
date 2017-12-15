@@ -128,18 +128,9 @@
                             the node operators using MRCL tokens.
                         </p>
                         <p>
-                            <button id="tokendetailsshow" class="btn btn-primary btn-lg" role="button">
-                                <i class="fa fa-info" aria-hidden="true"></i> Token details</button>
+                            <a href="#token-distribution" id="tokendetailsshow" class="btn btn-primary btn-lg" role="button">
+                                <i class="fa fa-info" aria-hidden="true"></i> Token details</a>
                         </p>
-                        <div id="tokendetails" style="display: none">
-                            <ol style="font-size: 12px">
-                                <li>Total supply for voters: 15,000,000</li>
-                                <li>Undistributed supply will be distributed at sidechain launch to voters based on their vote weight.</li>
-                                <li>Forging rewards: 1 MRCL per 10s block, reduced by .1 after first year, then each 6 months
-                                    afterwards until reward reaches .5 MRCL.</li>
-                                <li>Support is planned for Lisk's decentralized exchange.</li>
-                            </ol>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -279,7 +270,16 @@
                 <p style="font-size: 18px">Vote StellarDynamic to start receiving Lisk and Moracle token rewards. No other votes are required.</p>
             </div>
             <div class="col-md-4">
-                <canvas id="distribution-chart" width="500" height="500"></canvas>
+                <canvas id="distribution-chart" width="500" height="500"></canvas><br>
+                <div id="tokendetails">
+                    <ol style="font-size: 12px">
+                        <li>Total supply for voters: 15,000,000</li>
+                        <li>Undistributed supply will be distributed at sidechain launch to voters based on their vote weight.</li>
+                        <li>Forging rewards: 1 MRCL per 10s block, reduced by .1 after first year, then each 6 months
+                            afterwards until reward reaches .5 MRCL.</li>
+                        <li>Support is planned for Lisk's decentralized exchange.</li>
+                    </ol>
+                </div>
             </div>
         </div>
         <h2 class="headingh2">Development</h2>
