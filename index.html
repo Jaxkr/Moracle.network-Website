@@ -277,7 +277,10 @@
                     <ul>
                         <li>Support the development of Moracle.</li>
                         <li>Allow you to instantly start receiving Lisk forging rewards from the StellarDynamic pool.</li>
-                        <li>Grant you 85 MRCL tokens for every LSK you earn, beginning December 21st, 2017.</li>
+                        <li>Grant you
+                            <span style="text-decoration: underline;" id="moracle-ratio" data-html="true" data-container="body" data-toggle="popover" data-trigger="hover"
+                                data-placement="top" data-content="MRCL payouts have been increased by approximately 0.4%.<br>The MRCL:LSK ratio was reduced
+                                from 85 to 32, as the StellarDynamic pool percentage has increased from 15% to 40%.">32 MRCL tokens for every LSK you earn</span>, beginning December 21st, 2017.</li>
                         <li>Contribute towards future Lisk meetups and other Lisk USA projects.</li>
                     </ul>
                 </p>
@@ -466,6 +469,9 @@
                 }
             }
         });
+
+
+        $('#moracle-ratio').popover();
     </script>
 </body>
 

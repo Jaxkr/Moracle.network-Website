@@ -59,3 +59,7 @@ span.blob {
     font-size:20px;
     
 }
+
+.popover {
+    max-width: 100%; 
+}
