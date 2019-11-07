@@ -4,6 +4,7 @@
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110189297-1"></script>
+    <meta charset="UTF-8">
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -14,375 +15,77 @@
 
         gtag('config', 'UA-110189297-1');
     </script>
+    <style>
+        body {
+            background-color: #cccccc;
+            text-align: center;
+            font-family: sans-serif;
+        }
 
-    <title>Moracle - The oracle that does more</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
+        #container {
+            width: 90%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+            line-height: 25px;
+        }
+        @media only screen and (min-width: 768px) {
+            #container {
+                width: 50%;
+            }
+        }
+    </style>
+
+    <title>Moracle - The universal data adapter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 </head>
 
 <body>
-    <!--<canvas id="constellationbg" style="pointer-events: none; z-index: -2; position:absolute; width: 100%;"></canvas>-->
-    <div class="container">
-        <nav class="navbar navbar-light navbar-expand-lg bg-light" style="background-color: #e3f2fd;">
-            <a class="navbar-brand" href="/">Moracle.network</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="whitepaper.pdf">Whitepaper</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/donors.html">Donors</a>
-                    </li>
-                </ul>
-                <div class="ml-auto">
-                    <a href="https://twitter.com/MoracleNetwork?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @MoracleNetwork</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-            </div>
-        </nav>
-        <div>
-            <img src="images/bannerlogo.png" class="img-fluid" style="display: block; margin-left: auto; margin-right:auto; max-height: 350px;">
-        </div>
-        <div class="jumbotron">
-            <h1>Smarter blockchain applications need smarter oracles.</h1>
-            <p class="lead">Introducing Moracle, the decentralized and programmable oracle.</p>
-            <hr class="my-4">
-            <a href="#learn" class="btn btn-primary btn-lg jumbotron-button" role="button">
-                <i class="fa fa-arrow-down" aria-hidden="true"></i> Learn more</a>
-            <a href="whitepaper.pdf" class="btn btn-light btn-lg jumbotron-button" role="button">
-                <i class="fa fa-file-text-o" aria-hidden="true"></i> Read the whitepaper</a>
-            <a href="#updates" class="btn btn-success btn-lg jumbotron-button" role="button">
-                <i class="fa fa-envelope-o" aria-hidden="true"></i> Get updates</a>
-            <br>
-            <br>
-            <p class="lead" style="margin-bottom: 0px;">
-                <a href="https://github.com/MoracleNetwork/Moracle-prototype" class="btn btn-light btn-lg">
-                    <i class="fa fa-github" aria-hidden="true"></i> View prototype</a>
-            </p>
-        </div>
-        <div class="alert alert-success" role="alert">
-            Big thanks to Lisk delegate StellarDynamic who is now helping fund development of this project! More information
-            <a href="#sponsors">here</a>.
-        </div>
-        <a name="learn"></a>
-        <h2>What is an oracle?</h2>
-        <p>The code of a blockchain application must be 100% deterministic. This is necessary in order for other nodes to verify
-            the outcome of the code.</p>
-        <p>
-            This means that there are some limitations on the functions that blockchain applications can perform. Blockchain code cannot:
-        </p>
-        <ul>
-            <li>Generate random numbers</li>
-            <li>Access information from the web or use web APIs</li>
-            <li>Communicate with other blockchains</li>
-        </ul>
-        <p>In order to perform these functions, an outside entity (known as an oracle) must request/generate the data needed,
-            and embed it in the blockchain for the decentralized application to access. However, existing oracle implementations
-            are centralized or expensive.
-        </p>
-        <p style="font-size: 19px">Moracle aims to solve these problems by offering an
-            <b>inexpensive</b>,
-            <b>decentralized</b>, and
-            <b>fast</b> oracle service.
-            <br>Built on the
-            <a href="https://lisk.io/">Lisk Blockchain Application Platform</a>, Moracle will allow for connected and dynamic decentralized apps.</p>
-        <h2 class="headingh2">Features</h2>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="card">
-                    <img class="card-img-top" src="images/distributed.png">
-                    <div class="card-body">
-                        <h4 class="card-title">Decentralized data service</h4>
-                        <p class="card-text">Anyone will be able to operate a Moracle node, and multiple nodes must agree on a query result before
-                            it is accepted by the network. The network will be fully distributed and decentralized, which
-                            allows for high availablity and trustless verification.
-                        </p>
+
+    <img style="max-width: 40%" src="images/bannerlogo.png">
+    <div id="container">
+        <h2>Hey there! 👋</h2>
+        <p>Our new website and the release of the Moracle module for the Lisk SDK are coming soon!</p>
+        <p>We're very excited to be demoing our new product at <a href="https://lisk.io/events/lisk.js-2019">lisk.js 2019</a> on November 19th!
+        Our alpha module, documentation, and new website will be launching shortly afterwards.</p>
+
+        <p>If you'd like to get updates on the project, consider subscribing to our mailing list (we've only sent one email in the last two years, so rest assured we won't spam you). </p>
+
+        <!-- Begin MailChimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+
+        <style type="text/css">
+            #mc_embed_signup {
+                font: 14px Helvetica, Arial, sans-serif;
+            }
+        </style>
+        <div id="mc_embed_signup">
+            <form
+                action="https://network.us17.list-manage.com/subscribe/post?u=ddfe8eeca36ed8320f88309cd&amp;id=1e1076e31b"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                    <label for="mce-EMAIL">Subscribe to our mailing list</label>
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address"
+                        required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_ddfe8eeca36ed8320f88309cd_1e1076e31b" tabindex="-1" value="">
+                    </div>
+                    <div class="clear">
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                            class="button">
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-8">
-                <div class="card">
-                    <img class="card-img-top" src="images/queries.png">
-                    <div class="card-body">
-                        <h4 class="card-title">Dynamic and programmable queries</h4>
-                        <p class="card-text">Query the Moracle network in real time with simple JSON objects. No need to set up a data source
-                            ahead of time! The network will be entirely accessible through the JavaScript API, and wrappers
-                            will be available in numerous other programming languages!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="card">
-                    <img class="card-img-top" src="images/stack.png">
-                    <div class="card-body">
-                        <h4 class="card-title">MRCL Token</h4>
-                        <p class="card-text">All transactions in the Moracle ecosystem will be paid for by the MRCL token. Node operators will
-                            be able to earn money by providing a reliable data provider, and blockchain app users will pay
-                            the node operators using MRCL tokens.
-                        </p>
-                        <p>
-                            <a href="#token-distribution" id="tokendetailsshow" class="btn btn-primary btn-lg" role="button">
-                                <i class="fa fa-info" aria-hidden="true"></i> Token details</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="card">
-                    <img class="card-img-top" src="images/logo-dark.svg">
-                    <div class="card-body">
-                        <h4 class="card-title">Lisk and beyond</h4>
-                        <p>
-                            Moracle will be built with the upcoming Lisk SDK, but will also implement support for both
-                            <a href="https://interledger.org/">ILP</a> and
-                            <a href="https://cosmos.network/about">Cosmos's IBC</a> allowing for a diverse ecosystem of dApps to interact with the open internet.
-                        </p>
-                        <p class="lead">Want to learn more?
-                            <a href="whitepaper.pdf">Read the whitepaper</a> for more details.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a name="demo"></a>
-        <h2 class="headingh2">Prototype demo</h2>
-        <div style="width: 100%; height: 0px; position: relative; padding-bottom: 62.500%;">
-            <iframe src="https://streamable.com/s/b4ncu/xefall" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe>
-        </div>
-        <br>
-        <a name="sponsors"></a>
-        <h2 class="headingh2">
-            Sponsors
-        </h2>
-        <p>
-            Delegate
-            <a target="_blank" href="http://stellardynamic.io">StellarDynamic</a> is supporting the project with a 5% share of his forged Lisk. This contribution will greatly
-            help fund the development, design, and testing required to make Moracle great. Thank you for the support!
-
-        </p>
-        <a name="token-distribution"></a>
-        <h2 class="headingh2">Token distribution</h2>
-        <div class="row">
-            <div class="col-md-8">
-                <p>
-                    Moracle is a project by and for the Lisk community. As such, we wanted to ensure that MRCL tokens are distributed fairly.
-                    If you're interested in earning MRCL tokens to be distributed at the launch of the sidechain, vote delegate
-                    <b>StellarDynamic</b>.
-                </p>
-                <p>
-                    Your vote will:
-                    <ul>
-                        <li>Support the development of Moracle.</li>
-                        <li>Allow you to instantly start receiving Lisk forging rewards from the StellarDynamic pool.</li>
-                        <li>Grant you
-                            <span style="text-decoration: underline;" id="moracle-ratio" data-html="true" data-container="body" data-toggle="popover" data-trigger="hover"
-                                data-placement="top" data-content="MRCL payouts have been increased by approximately 0.4%.<br>The MRCL:LSK ratio was reduced
-                                from 85 to 32, as the StellarDynamic pool percentage has increased from 15% to 40%.">32 MRCL tokens for every LSK you earn</span>, beginning December 21st, 2017.</li>
-                        <li>Contribute towards future Lisk meetups and other Lisk USA projects.</li>
-                    </ul>
-                </p>
-                <p>In addition to this voter reward program, an ICO will take place on the Lisk platform.</p>
-            </div>
-            <div class="col-md-4">
-                <canvas id="distribution-chart" width="500" height="500"></canvas>
-                <br>
-                <div id="tokendetails">
-                    <ol style="font-size: 12px">
-                        <li>Total supply for voters and initial offering: 15,000,000</li>
-                        <li>Undistributed supply will be distributed at sidechain launch to voters based on their vote weight.</li>
-                        <li>Forging rewards: 1 MRCL per 10s block, reduced by .1 after first year, then each 6 months afterwards
-                            until reward reaches .5 MRCL.</li>
-                        <li>Reserved tokens will be used to fund development bounties, reward early node operators, and support
-                            continued development.</li>
-                        <li>Support is planned for Lisk's decentralized exchange.</li>
-                        <li>These values are subject to change before launch.</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-        <h2 class="headingh2">Development</h2>
-        <p>
-            Moracle will be completely open source and licensed under the MIT license. Lisk was chosen due to its use of JavaScript over
-            a custom language such as Solidity. JavaScript is advantageous because it allows developers to begin using the
-            platform with a minimal learning curve due to the language being popular and well documented. A full roadmap
-            for Moracle will be released shortly after the Lisk SDK becomes available.
-        </p>
-        <h2 class="headingh2">Team</h2>
-        <div class="card-deck">
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">Jackson Roberts</h4>
-                    <h6 class="card-subtitle mb-2 text-muted">Whitepaper author and lead developer</h6>
-                    <p class="card-text">
-                        Hi! I'm a professional software developer and I've been involved in the cryptocurrency community since 2012. I'm very excited
-                        about Lisk, and am looking forward to building applications on the platform. I am currently the Boulder
-                        Community Ambassador and am the host of the
-                        <a href="https://www.meetup.com/Lisk-Boulder-Blockchain-Meetup/">Lisk Boulder Blockchain Meetups</a>.
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <a href="https://lisk.chat/" class="card-link">lisk.chat</a>: @jackson
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">Edward Trosclair</h4>
-                    <h6 class="card-subtitle mb-2 text-muted">Advisor</h6>
-                    <p class="card-text">
-                        I'm a blockchain advocate and Lisk community leader from New Orleans, LA with education in Information Technology. I am the
-                        project lead of
-                        <a href="http://www.liskusa.io/">LiskUSA.io</a> and a delegate who secures the Lisk Network. My studies include consensus, game theory,
-                        and development.
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <a href="https://lisk.chat/" class="card-link">lisk.chat</a>: @StellarDynamic
-                </div>
-            </div>
-        </div>
-        <a name="updates"></a>
-        <h2 class="headingh2">Stay updated</h2>
-        <div class="row">
-            <div class="col-md-5">
-                <h4>Twitter</h4>
-                <a class="twitter-timeline" href="https://twitter.com/MoracleNetwork?ref_src=twsrc%5Etfw">Tweets by MoracleNetwork</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-            <div class="col-md-7">
-                <h4>Email</h4>
-                <!-- Begin MailChimp Signup Form -->
-                <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-                <style type="text/css">
-                    #mc_embed_signup {
-                        background: #fff;
-                        clear: left;
-                        font: 14px Helvetica, Arial, sans-serif;
-                    }
-                </style>
-                <div id="mc_embed_signup">
-                    <form action="https://network.us17.list-manage.com/subscribe/post?u=ddfe8eeca36ed8320f88309cd&amp;id=1e1076e31b" method="post"
-                        id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                            <label for="mce-EMAIL">Subscribe to our mailing list</label>
-                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                <input type="text" name="b_ddfe8eeca36ed8320f88309cd_1e1076e31b" tabindex="-1" value="">
-                            </div>
-                            <div class="clear">
-                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <!--End mc_embed_signup-->
-            </div>
-        </div>
-
-    </div>
-
-    <div style="padding-top:20px; padding-bottom:20px; background-color: #2e6cd1; margin-top: 25px;">
-        <div class="container">
-            <span style="color: rgb(231, 231, 231); font-size: 10px;">&copy; Moracle Network 2017</span>
+            </form>
         </div>
     </div>
 
+    <!--End mc_embed_signup-->
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-        crossorigin="anonymous"></script>
-    <script src="scripts/constellation.min.js"></script>
-    <script>
-        /*
-        var constellationInstance = window.constellation({
-            size: [2000, 500],
-            canvas: document.querySelector('canvas'),
-            padding: [-100, 2],
-            starCount: 100,
-            lineCount: 400,
-            fuzziness: 100,
-            style: {
-                starColor: '#000',
-                lineColor: '#858585',
-                lineSize: .3,
-                starPadding: 0,
-                starSize: 2
-            }
-        });
-        */
-
-
-
-        $("#tokendetailsshow").click(function () {
-            $('#tokendetails').show();
-        });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js" integrity="sha256-N4u5BjTLNwmGul6RgLoESPNqDFVUibVuOYhP4gJgrew="
-        crossorigin="anonymous"></script>
-    <script>
-        var ctx = document.getElementById("distribution-chart").getContext('2d');
-        var data = {
-            datasets: [{
-                data: [55, 40, 5],
-                backgroundColor: [
-                    '#3ba0af', '#2aa84b', '#564b31'
-                ],
-                borderWidth: [0, 0, 0],
-            }],
-
-            // These labels appear in the legend and in the tooltips when hovering different arcs
-            labels: [
-                'Initial offering',
-                'Forged in first year',
-                'Reserved'
-            ],
-        };
-        var myDoughnutChart = new Chart(ctx, {
-            type: 'doughnut',
-            data: data,
-            options: {
-                tooltips: {
-                    callbacks: {
-                        label: function (tooltipItem, data) {
-                            //get the concerned dataset
-                            var dataset = data.datasets[tooltipItem.datasetIndex];
-                            //calculate the total of this data set
-                            var total = dataset.data.reduce(function (previousValue, currentValue, currentIndex, array) {
-                                return previousValue + currentValue;
-                            });
-                            //get the current items value
-                            var currentValue = dataset.data[tooltipItem.index];
-                            //calculate the precentage based on the total and current item, also this does a rough rounding to give a whole number
-                            var percent = Math.floor(((currentValue / total) * 100) + 0.5);
-
-                            return " " + percent + "%";
-                        }
-                    }
-                }
-            }
-        });
-
-
-        $('#moracle-ratio').popover();
-    </script>
 </body>
 
 </html>
