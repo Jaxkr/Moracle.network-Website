@@ -6,21 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Moracle - Blockchain oracle and DeFi tools for Lisk</title>
     <style>
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translate3d(0, -10%, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .fade-in1 {
+            animation: fadeIn .5s ease-in both;
+        }
+
+        .fade-in2 {
+            animation: fadeIn .5s ease-in both;
+            animation-delay: .3s;
+        }
+
+        .fade-in3 {
+            animation: fadeIn .5s ease-in both;
+            animation-delay: .5s;
+        }
+
+        .fade-in4 {
+            animation: fadeIn .3s ease-in both;
+            animation-delay: 1.5s;
+            margin-bottom: 25px;
+        }
+
         body {
-            background-color: rgb(79, 85, 85);
+            margin: 0;
+            padding: 0;
+        }
+
+        .welcome {
+            background-image: url("bg-gradient.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            position: relative;
+            overflow: hidden;
         }
     </style>
 </head>
 <body>
 <div style="text-align: center;">
-    <img src="bannerlogo.png">
-    <p style="font-family: sans-serif; color: white; font-size: x-large;">The blockchain oracle for the Lisk SDK.</p>
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qAGG7bFEBv0"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    <p style="font-family: sans-serif; color: white; font-size: large;">Coming soon to Lisk SDK 5.0</p>
-    <p style="font-family: sans-serif; color: white; font-size: x-large;" id="demo"></p>
+    <div class="welcome">
+        <img style="max-width: 300px" class="fade-in1" src="bannerlogo.png">
+        <p class="fade-in2" style="font-family: sans-serif; font-size: x-large; font-weight: bold;">The blockchain
+            oracle for the Lisk
+            SDK. Coming soon.</p>
+        <div style="border: 1px solid grey; border-radius: 6px; background-color: rgba(255, 255, 255, 0.5);
+        max-width: 700px; margin: 0 auto 0 auto; text-align: left; padding: 2rem; font-family: sans-serif; margin-top: 25px; margin-bottom: 100px;"
+             class="fade-in3">
+            <h1 style="font-size: 25px">An important update for StellarDynamic voters regarding Moracle token (MRCL)
+                airdrops</h1>
+            <p>Lisk has recently completed the mainchain migration to Lisk Core 3.0! We'd like to congratulate the
+                community and the Lisk Foundation on the successful transition. Now that Lisk's voting system has been
+                revamped, we'd like to clarify how your support of StellarDynamic will earn you rewards on our future
+                sidechain.</p>
+            <p>First, all existing rewards will be honored. Voters who supported StellarDynamic from Sept 1st 2017 to
+                Aug 19th 2021 will receive 45 MRCL tokens for each LSK they were awarded through the delegate revenue
+                share.</p>
+            <p>As delegate reward sharing will not play as large a factor in the new version of Lisk Core, we're
+                changing to reward structure to incentive voters. You will now be awarded based on your total vote
+                weight contributed towards the StellarDynamic delegate. Every full month you vote, you will receive 1.2%
+                of your total
+                staked LSK as MRCL tokens.</p>
+            <p>If you have any questions, feel free to contact me on Discord at Jax#4739. Stay tuned for the release of
+                our developer library for Lisk SDK v5!</p>
+        </div>
+        <div class="fade-in4">
+            <h2 style="font-family: sans-serif">Video: An introduction to Moracle</h2>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qAGG7bFEBv0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
 
     <script>
         // Set the date we're counting down to
